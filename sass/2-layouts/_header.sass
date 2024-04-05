@@ -3,11 +3,12 @@
 @use 'layouts-mixins'
 
 .header
-  background-color: variables.$bg-color
+  background-color: variables.$light-color
+  margin-top: 2rem
 
   &-top
     background-color: variables.$secondary-bg-color
-    color: variables.$light-color
+    color: variables.$primary-color
 
     @include base-mixins.mobile
       display: none
@@ -23,7 +24,7 @@
         margin-right: .3rem
 
       a
-        color: variables.$light-color
+        color: variables.$primary-color
 
 .main-header
 
@@ -36,14 +37,14 @@
       align-items: center
 
     a, span, i
-      color: #FFF
+      color: #1e1f29de
 
     #brand
       font-weight: 900
       font-size: 3rem
 
       i
-        color: variables.$primary-color
+        color: variables.$secondary-bg-color
         font-size: 2rem
 
     #search-form
@@ -58,6 +59,7 @@
 
       input
         height: 40px
+        border: 0.1px solid variables.$secondary-bg-color
 
       #search
         @include layouts-mixins.rounded-input
@@ -94,5 +96,5 @@
         border-bottom: 2px solid transparent
 
         &:hover
-          color: variables.$primary-color
-          border-color: variables.$primary-color
+          color: variables.$secondary-bg-color
+          border-color: variables.$secondary-bg-color
