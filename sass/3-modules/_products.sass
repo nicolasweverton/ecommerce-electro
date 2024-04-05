@@ -2,7 +2,6 @@
 @use '../1-base/base-mixins'
 
 .products-grid-card
-  border: 1px solid variables.$gray-text-color
   position: relative
   width: 20%
   padding: 1rem
@@ -10,7 +9,8 @@
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: center
+  border-radius: 20px
+  background-color: #F7F7F7
 
   @include base-mixins.mobile
     width: 90%
