@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Electrum E-commerce</title>
-  <!-- Open Sans -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <!-- CSS do projeto -->
   <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
@@ -36,31 +35,35 @@
         </div>
       </div>
     </div>
-    <div class="header-bottom">
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Promoções</a>
-          </li>
-          <li>
-            <a href="#">Notebooks</a>
-          </li>
-          <li>
-            <a href="#">Celulares</a>
-          </li>
-          <li>
-            <a href="#">Câmeras</a>
-          </li>
-          <li>
-            <a href="#">Acessórios</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </header>
+  <!-- Deal -->
+  <div class="deal-container-grid">
+    <div class="deal-container">
+      <div class="deal-container-content">
+        <h2 class="deal-container-content-title">Promoção de Fone Gamer</h2>
+        <p class="deal-container-content-subtitle">Toda a linha gamer com 50% de desconto</p>
+        <button class="btn">Comprar Agora</button>
+        <div class="deal-container-content-timer">
+          <div class="deal-container-timer">
+            <span class="deal-container-timer-time">02</span>
+            <span class="deal-container-timer-word">Dias</span>
+          </div>
+          <div class="deal-container-timer">
+            <span class="deal-container-timer-time">12</span>
+            <span class="deal-container-timer-word">Horas</span>
+          </div>
+          <div class="deal-container-timer">
+            <span class="deal-container-timer-time">25</span>
+            <span class="deal-container-timer-word">Minutos</span>
+          </div>
+          <div class="deal-container-timer">
+            <span class="deal-container-timer-time">33</span>
+            <span class="deal-container-timer-word">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Banners -->
   <div class="banners">
     <div class="banner" id="banner-1">
@@ -80,7 +83,7 @@
     <div class="banner" id="banner-3">
       <div class="banner-cover"></div>
       <div class="banner-content">
-        <h2>Câmeras Potentes</h2>
+        <h2>Fones Potentes</h2>
         <a href="#">Ver Mais <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
@@ -90,8 +93,7 @@
     <h2>Produtos Novos</h2>
     <div class="products-grid-container">
       <div class="products-grid-card">
-        <span class="label new">New</span>
-        <img src="img/prod-1.jpg" alt="Produto 1">
+        <img src="img/prod-1.png" alt="Produto 1">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -105,8 +107,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label new">New</span>
-        <img src="img/prod-2.jpg" alt="Produto 2">
+        <img src="img/prod-2.png" alt="Produto 2">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -120,8 +121,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label new">New</span>
-        <img src="img/prod-3.jpg" alt="Produto 3">
+        <img src="img/prod-3.png" alt="Produto 3">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -135,8 +135,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label new">New</span>
-        <img src="img/prod-4.jpg" alt="Produto 4">
+        <img src="img/prod-4.png" alt="Produto 4">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -149,32 +148,6 @@
         </div>
         <button class="btn">Comprar</button>
       </div>
-    </div>
-  </div>
-  <!-- Deal -->
-  <div class="deal-container">
-    <div class="deal-container-content">
-      <div class="deal-container-content-timer">
-        <div class="deal-container-timer">
-          <span class="deal-container-timer-time">02</span>
-          <span class="deal-container-timer-word">Dias</span>
-        </div>
-        <div class="deal-container-timer">
-          <span class="deal-container-timer-time">12</span>
-          <span class="deal-container-timer-word">Horas</span>
-        </div>
-        <div class="deal-container-timer">
-          <span class="deal-container-timer-time">25</span>
-          <span class="deal-container-timer-word">Minutos</span>
-        </div>
-        <div class="deal-container-timer">
-          <span class="deal-container-timer-time">33</span>
-          <span class="deal-container-timer-word">Segundos</span>
-        </div>
-      </div>
-      <h2 class="deal-container-content-title">Promoção de Fone Gamer</h2>
-      <p class="deal-container-content-subtitle">Toda a linha gamer com 50% de desconto</p>
-      <button class="btn">Comprar Agora</button>
     </div>
   </div>
   <!-- Mais Vendidos -->
@@ -182,8 +155,7 @@
     <h2>Mais Vendidos</h2>
     <div class="products-grid-container">
       <div class="products-grid-card">
-        <span class="label hot">Hot</span>
-        <img src="img/prod-5.jpg" alt="Produto 5">
+        <img src="img/prod-5.png" alt="Produto 5">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -197,8 +169,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label hot">Hot</span>
-        <img src="img/prod-6.jpg" alt="Produto 6">
+        <img src="img/prod-6.png" alt="Produto 6">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -212,8 +183,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label hot">Hot</span>
-        <img src="img/prod-7.jpg" alt="Produto 7">
+        <img src="img/prod-7.png" alt="Produto 7">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
@@ -227,8 +197,7 @@
         <button class="btn">Comprar</button>
       </div>
       <div class="products-grid-card">
-        <span class="label hot">Hot</span>
-        <img src="img/prod-8.jpg" alt="Produto 8">
+        <img src="img/prod-8.png" alt="Produto 8">
         <p class="category">Categoria</p>
         <h3 class="product-name">Nome do Produto</h3>
         <p class="product-price">R$ 124,90</p>
