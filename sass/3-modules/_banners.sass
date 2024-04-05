@@ -10,6 +10,8 @@
   transition: .4s
   @include modules-mixins.center-bg
   background-size: 100%
+  border-radius: 30px
+  cursor: pointer
 
   @include base-mixins.mobile
     width: 90%
@@ -19,11 +21,11 @@
     background-size: 120%
 
   &-cover
-    background-color: variables.$primary-color
+    background-color: variables.$secondary-bg-color
     width: 70%
     height: 100%
-    opacity: .8
-    border-bottom-right-radius: 6rem
+    opacity: 0.9
+    border-radius: 30px
 
   &-content
     position: absolute
@@ -32,12 +34,12 @@
     padding: 2rem
 
     h2
-      font-size: 2.1rem
+      font-size: 1.5rem
       margin-bottom: 1rem
       max-width: 70%
 
     a
-      font-size: 1.5rem
+      font-size: 1rem
       color: variables.$light-color
       font-weight: bold
       display: flex
